@@ -20,7 +20,7 @@ function App() {
       <h1 className="text-2xl font-bold mb-4">Países</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {paises.map((pais, index) => (
-          <div key={index} className="p-4 border rounded shadow">
+          <div key={index} className="p-4 border border-2 rounded shadow hover:bg-gray-100 hover:border-gray-400 hover:shadow-lg transition-all duration-300">
             <img src={pais.images} alt={pais.name} className="w-12 mb-2" />
             <h2 className="text-lg font-semibold">{pais.name}</h2>
             <p>População: {pais.population.toLocaleString()}</p>
